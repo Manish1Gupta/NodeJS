@@ -1,0 +1,50 @@
+ Node.js provides the functionality to read and write files from the computer.
+Reading and Writing the file in Node.js is done by using one of the coolest Node.js modules called fs module, 
+it is one of the most well-known built-in Node.js modules out there.
+
+.....................................................................................................................................................................
+....................................................................................................................................................................
+..................................................................................................................................................................
+The file can be read and written in node.js in both Synchronous and Asynchronous ways.
+A Synchronous method is a code-blocking method which means the given method will block the execution of code until its execution is finished (i.e. Complete file is read or written). 
+On the other hand, an Asynchronous method has a callback function that is executed on completion of the execution of the given method and thus allows code to run during the completion of its execution.
+
+
+👉1st setup all npm 
+a) npm init -y
+b) npm install express
+
+
+c) create a file like app.js
+.................................................................................................
+.................................................................................................
+1st example code:
+                 const fs= require("fs");
+fs.writeFileSync('./test.txt', "Hey There! My Name manish ");
+
+// run node app.js
+after that test.txt file are show 
+
+.................................................................................................
+.................................................................................................
+.................................................................................................
+
+2nd Example:-
+
+
+ // Require the given module
+const fs = require('fs');
+
+// Use readFileSync() method
+
+// Store the result (return value) of this
+// method in a variable named readMe
+
+// Keep the file in the same folder so
+// donot need to specify the complete path
+const readMe = fs.readFileSync('readMe.txt', 'utf-8');
+
+// log the content of file stored in
+// a variable to screen
+console.log(readMe);
+
